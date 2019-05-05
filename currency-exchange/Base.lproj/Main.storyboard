@@ -21,40 +21,40 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7G4-tC-vjr">
                                 <rect key="frame" x="0.0" y="40" width="375" height="152"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CNC-Yh-daz">
-                                    <size key="itemSize" width="316" height="145"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CIf-o3-kyA">
+                                    <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CurrencyIdentifier" id="M7T-IY-jTz" customClass="CurrencyCollectionViewCell" customModule="currency_exchange" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="3.5" width="316" height="145"/>
+                                        <rect key="frame" x="0.0" y="1.5" width="327" height="149"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="316" height="145"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="327" height="149"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EUR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7GL-dY-PGM">
-                                                    <rect key="frame" x="20" y="38" width="78" height="42"/>
+                                                    <rect key="frame" x="20" y="38" width="89" height="42"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have: 100.00€" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQq-Zp-fXD">
-                                                    <rect key="frame" x="20" y="110" width="148" height="18"/>
+                                                    <rect key="frame" x="20" y="110" width="159" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" text="-1" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L9I-tk-b1R">
-                                                    <rect key="frame" x="188" y="38" width="108" height="46"/>
+                                                    <rect key="frame" x="199" y="38" width="108" height="46"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€1 = £0.86" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chh-HU-WlA">
-                                                    <rect key="frame" x="203" y="110" width="93" height="18"/>
+                                                    <rect key="frame" x="214" y="110" width="93" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -76,6 +76,7 @@
                                             <constraint firstAttribute="trailingMargin" secondItem="chh-HU-WlA" secondAttribute="trailing" constant="12" id="e9v-GD-0Rx"/>
                                             <constraint firstItem="BQq-Zp-fXD" firstAttribute="leading" secondItem="M7T-IY-jTz" secondAttribute="leadingMargin" constant="12" id="fBp-AS-UOb"/>
                                         </constraints>
+                                        <size key="customSize" width="327" height="149"/>
                                         <connections>
                                             <outlet property="currencyNameLabel" destination="7GL-dY-PGM" id="zJI-1V-qfP"/>
                                             <outlet property="currentBalanceOfThisCurrencyLabel" destination="BQq-Zp-fXD" id="9Gg-d9-Oue"/>
@@ -167,8 +168,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="CurrencyCollectionView2" destination="0h6-oJ-E75" id="HpD-Bq-djY"/>
-                        <outlet property="currencyColletionView" destination="7G4-tC-vjr" id="khP-K8-TO8"/>
+                        <outlet property="currencyCollectionView" destination="7G4-tC-vjr" id="khP-K8-TO8"/>
+                        <outlet property="currencyCollectionView2" destination="0h6-oJ-E75" id="HpD-Bq-djY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
