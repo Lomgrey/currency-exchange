@@ -11,12 +11,12 @@ import UIKit
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var currencyColletionView: UICollectionView!
+    @IBOutlet weak var CurrencyCollectionView2: UICollectionView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        currencyColletionView.register(UINib(nibName: "CurrencyCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "currencyIdentifier_")
         
         let floawLayout = UPCarouselFlowLayout()
         floawLayout.itemSize = CGSize(width: UIScreen.main.bounds.size.width - 60.0, height: currencyColletionView.frame.size.height)
@@ -39,8 +39,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    
+        let cellRaw = collectionView.dequeueReusableCell(withReuseIdentifier: CurrencyCollectionViewCell.identifier, for: indexPath)
         
-        let cell = currencyColletionView.dequeueReusableCell(withReuseIdentifier: "currencyIdentifier_", for: indexPath) as! CurrencyCollectionViewCell
+        let cell = cellRaw as! CurrencyCollectionViewCell
+        
         cell.currencyNameLabel.text = currencies[indexPath.row]
         cell.currentBalanceOfThisCurrencyLabel.text = String(100)
         cell.exchangeValueTextField.text = "0"

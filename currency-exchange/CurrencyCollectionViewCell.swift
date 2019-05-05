@@ -9,26 +9,28 @@
 import UIKit
 
 class CurrencyCollectionViewCell: UICollectionViewCell {
-
     
-    @IBOutlet weak var currencyView: UIView!
+    static let identifier = "CurrencyIdentifier"
+    
+    
+//    @IBOutlet weak var currencyView: UIView!
     @IBOutlet weak var currencyNameLabel: UILabel!
     @IBOutlet weak var exchangeValueTextField: UITextField!
     @IBOutlet weak var currentBalanceOfThisCurrencyLabel: UILabel!
     @IBOutlet weak var rateLabel: UILabel!
     
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        self.layer.cornerRadius = 13.0
+        self.layer.shadowColor = UIColor.lightGray.cgColor
+        self.layer.shadowOpacity = 10.0
+        self.layer.shadowOffset = .zero
+        self.layer.shouldRasterize = true
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-        
-        DispatchQueue.main.async {
-            self.currencyView.layer.cornerRadius = 13.0
-            self.currencyView.layer.shadowColor = UIColor.lightGray.cgColor
-            self.currencyView.layer.shadowOpacity = 10.0
-            self.currencyView.layer.shadowOffset = .zero
-            self.currencyView.layer.shadowPath = UIBezierPath(rect: self.currencyView.bounds).cgPath
-            self.currencyView.layer.shouldRasterize = true
-        }
     }
-
+    
 }
