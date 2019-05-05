@@ -67,8 +67,17 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         return cell
     }
 
+    
+    // реагирует на тап по карточке
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("item selected == \(indexPath.row)")
+        var cvName : String
+        if currencyCollectionView === collectionView {
+            cvName = "coll_view_1"
+        } else {
+            cvName = "coll_view_2"
+        }
+        
+        print("Collection View = \(cvName); Item selected == \(indexPath.row)")
     }
     
 }
