@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="CurrencyCollectionViewCell" customModule="currency_exchange" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="290" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="290" height="140"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9NG-5e-HXW" customClass="CurrencyCollectionViewCell" customModule="currency_exchange" customModuleProvider="target">
+                        <rect key="frame" x="5" y="5" width="280" height="130"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EUR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6f-TP-j1d">
+                                <rect key="frame" x="9" y="30" width="69" height="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have: 100.00€" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prC-fg-5O9">
+                                <rect key="frame" x="9" y="97" width="136" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€1 = £0.86" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6K-Q9-SUq">
+                                <rect key="frame" x="185" y="97" width="87" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-1" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hun-bp-7y6">
+                                <rect key="frame" x="153" y="28" width="124" height="46"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="w6f-TP-j1d" firstAttribute="leading" secondItem="9NG-5e-HXW" secondAttribute="leading" constant="9" id="2ch-LQ-Jph"/>
+                            <constraint firstItem="w6K-Q9-SUq" firstAttribute="leading" secondItem="prC-fg-5O9" secondAttribute="trailing" constant="40" id="3Fv-KL-tOI"/>
+                            <constraint firstItem="w6f-TP-j1d" firstAttribute="top" secondItem="9NG-5e-HXW" secondAttribute="top" constant="30" id="3UE-K4-gb1"/>
+                            <constraint firstAttribute="trailing" secondItem="w6K-Q9-SUq" secondAttribute="trailing" constant="8" id="59K-nh-gVH"/>
+                            <constraint firstItem="Hun-bp-7y6" firstAttribute="top" secondItem="9NG-5e-HXW" secondAttribute="top" constant="28" id="5ai-6D-8Ui"/>
+                            <constraint firstItem="w6K-Q9-SUq" firstAttribute="top" secondItem="Hun-bp-7y6" secondAttribute="bottom" constant="23" id="8Wu-k7-p5i"/>
+                            <constraint firstAttribute="trailing" secondItem="Hun-bp-7y6" secondAttribute="trailing" constant="3" id="FTy-bg-dsj"/>
+                            <constraint firstItem="prC-fg-5O9" firstAttribute="top" secondItem="w6f-TP-j1d" secondAttribute="bottom" constant="25" id="OOL-pB-fnD"/>
+                            <constraint firstAttribute="trailing" secondItem="w6f-TP-j1d" secondAttribute="trailing" constant="202" id="Okr-Qw-ViB"/>
+                            <constraint firstItem="prC-fg-5O9" firstAttribute="leading" secondItem="9NG-5e-HXW" secondAttribute="leading" constant="9" id="OsK-uT-e6b"/>
+                            <constraint firstItem="Hun-bp-7y6" firstAttribute="leading" secondItem="w6f-TP-j1d" secondAttribute="trailing" constant="75" id="agA-DU-4gU"/>
+                            <constraint firstAttribute="trailing" secondItem="prC-fg-5O9" secondAttribute="trailing" constant="135" id="mNL-Mv-q5g"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="9NG-5e-HXW" secondAttribute="trailing" constant="5" id="06f-Ri-3hN"/>
+                <constraint firstAttribute="bottom" secondItem="9NG-5e-HXW" secondAttribute="bottom" constant="5" id="MBR-5P-rAT"/>
+                <constraint firstItem="9NG-5e-HXW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="MXE-l2-E6d"/>
+                <constraint firstItem="9NG-5e-HXW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="W9E-SA-jkk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="290" height="140"/>
+            <connections>
+                <outlet property="currencyNameLabel" destination="w6f-TP-j1d" id="cEc-LT-H3U"/>
+                <outlet property="currencyView" destination="9NG-5e-HXW" id="4vH-wg-CbV"/>
+                <outlet property="currentBalanceOfThisCurrencyLabel" destination="prC-fg-5O9" id="93m-RD-Fxc"/>
+                <outlet property="exchangeValueTextField" destination="Hun-bp-7y6" id="Ggt-ei-MgI"/>
+                <outlet property="rateLabel" destination="w6K-Q9-SUq" id="HlX-WA-3MR"/>
+            </connections>
+            <point key="canvasLocation" x="82.608695652173921" y="127.23214285714285"/>
+        </collectionViewCell>
+    </objects>
+</document>

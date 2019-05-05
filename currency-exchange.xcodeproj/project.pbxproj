@@ -12,6 +12,9 @@
 		E7159DDB227EB7120013E89A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7159DD9227EB7120013E89A /* Main.storyboard */; };
 		E7159DDD227EB7150013E89A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7159DDC227EB7150013E89A /* Assets.xcassets */; };
 		E7159DE0227EB7150013E89A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7159DDE227EB7150013E89A /* LaunchScreen.storyboard */; };
+		E7159DE9227EC50F0013E89A /* CurrencyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7159DE7227EC50F0013E89A /* CurrencyCollectionViewCell.swift */; };
+		E7159DEA227EC50F0013E89A /* CurrencyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7159DE8227EC50F0013E89A /* CurrencyCollectionViewCell.xib */; };
+		E7159DEC227ECD7D0013E89A /* UPCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7159DEB227ECD7D0013E89A /* UPCarouselFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		E7159DDC227EB7150013E89A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7159DDF227EB7150013E89A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7159DE1227EB7150013E89A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7159DE7227EC50F0013E89A /* CurrencyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCollectionViewCell.swift; sourceTree = "<group>"; };
+		E7159DE8227EC50F0013E89A /* CurrencyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyCollectionViewCell.xib; sourceTree = "<group>"; };
+		E7159DEB227ECD7D0013E89A /* UPCarouselFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UPCarouselFlowLayout.swift; path = "../../../../Downloads/UPCarouselFlowLayout-master/UPCarouselFlowLayout/UPCarouselFlowLayout.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,11 +60,14 @@
 		E7159DD4227EB7120013E89A /* currency-exchange */ = {
 			isa = PBXGroup;
 			children = (
+				E7159DEB227ECD7D0013E89A /* UPCarouselFlowLayout.swift */,
 				E7159DD5227EB7120013E89A /* AppDelegate.swift */,
 				E7159DD7227EB7120013E89A /* ViewController.swift */,
+				E7159DE7227EC50F0013E89A /* CurrencyCollectionViewCell.swift */,
 				E7159DD9227EB7120013E89A /* Main.storyboard */,
-				E7159DDC227EB7150013E89A /* Assets.xcassets */,
+				E7159DE8227EC50F0013E89A /* CurrencyCollectionViewCell.xib */,
 				E7159DDE227EB7150013E89A /* LaunchScreen.storyboard */,
+				E7159DDC227EB7150013E89A /* Assets.xcassets */,
 				E7159DE1227EB7150013E89A /* Info.plist */,
 			);
 			path = "currency-exchange";
@@ -123,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7159DE0227EB7150013E89A /* LaunchScreen.storyboard in Resources */,
+				E7159DEA227EC50F0013E89A /* CurrencyCollectionViewCell.xib in Resources */,
 				E7159DDD227EB7150013E89A /* Assets.xcassets in Resources */,
 				E7159DDB227EB7120013E89A /* Main.storyboard in Resources */,
 			);
@@ -135,7 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7159DE9227EC50F0013E89A /* CurrencyCollectionViewCell.swift in Sources */,
 				E7159DD8227EB7120013E89A /* ViewController.swift in Sources */,
+				E7159DEC227ECD7D0013E89A /* UPCarouselFlowLayout.swift in Sources */,
 				E7159DD6227EB7120013E89A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
