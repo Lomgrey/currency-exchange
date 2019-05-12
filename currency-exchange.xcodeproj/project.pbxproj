@@ -14,6 +14,11 @@
 		E7159DE0227EB7150013E89A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7159DDE227EB7150013E89A /* LaunchScreen.storyboard */; };
 		E7159DEC227ECD7D0013E89A /* UPCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7159DEB227ECD7D0013E89A /* UPCarouselFlowLayout.swift */; };
 		E7159DEE227F36730013E89A /* CurrencyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7159DED227F36730013E89A /* CurrencyCollectionViewCell.swift */; };
+		E7B29CAB228845D80088F9A2 /* AccountsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B29CAA228845D80088F9A2 /* AccountsManager.swift */; };
+		E7B29CAD2288654E0088F9A2 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B29CAC2288654E0088F9A2 /* Currency.swift */; };
+		E7F1937122854A5A00A22353 /* CurrencyCardCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F1937022854A5A00A22353 /* CurrencyCardCollectionViewController.swift */; };
+		E7F1937322882D6C00A22353 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F1937222882D6C00A22353 /* Transaction.swift */; };
+		E7F1937522882F6200A22353 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F1937422882F6200A22353 /* Account.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		E7159DE1227EB7150013E89A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7159DEB227ECD7D0013E89A /* UPCarouselFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UPCarouselFlowLayout.swift; path = "../../../../Downloads/UPCarouselFlowLayout-master/UPCarouselFlowLayout/UPCarouselFlowLayout.swift"; sourceTree = "<group>"; };
 		E7159DED227F36730013E89A /* CurrencyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCollectionViewCell.swift; sourceTree = "<group>"; };
+		E7B29CAA228845D80088F9A2 /* AccountsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsManager.swift; sourceTree = "<group>"; };
+		E7B29CAC2288654E0088F9A2 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		E7F1937022854A5A00A22353 /* CurrencyCardCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCardCollectionViewController.swift; sourceTree = "<group>"; };
+		E7F1937222882D6C00A22353 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		E7F1937422882F6200A22353 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +68,45 @@
 		E7159DD4227EB7120013E89A /* currency-exchange */ = {
 			isa = PBXGroup;
 			children = (
+				E7B29CA9228845B90088F9A2 /* Managers */,
+				E7F1937022854A5A00A22353 /* CurrencyCardCollectionViewController.swift */,
 				E7159DEB227ECD7D0013E89A /* UPCarouselFlowLayout.swift */,
-				E7159DD5227EB7120013E89A /* AppDelegate.swift */,
 				E7159DD7227EB7120013E89A /* ViewController.swift */,
 				E7159DD9227EB7120013E89A /* Main.storyboard */,
-				E7159DDC227EB7150013E89A /* Assets.xcassets */,
-				E7159DDE227EB7150013E89A /* LaunchScreen.storyboard */,
-				E7159DE1227EB7150013E89A /* Info.plist */,
 				E7159DED227F36730013E89A /* CurrencyCollectionViewCell.swift */,
+				E7F1936C2285417D00A22353 /* model */,
+				E7F1936D2285419600A22353 /* Supporting Files */,
+				E7159DE1227EB7150013E89A /* Info.plist */,
+				E7B29CAC2288654E0088F9A2 /* Currency.swift */,
 			);
 			path = "currency-exchange";
+			sourceTree = "<group>";
+		};
+		E7B29CA9228845B90088F9A2 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E7B29CAA228845D80088F9A2 /* AccountsManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		E7F1936C2285417D00A22353 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E7F1937222882D6C00A22353 /* Transaction.swift */,
+				E7F1937422882F6200A22353 /* Account.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E7F1936D2285419600A22353 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7159DD5227EB7120013E89A /* AppDelegate.swift */,
+				E7159DDE227EB7150013E89A /* LaunchScreen.storyboard */,
+				E7159DDC227EB7150013E89A /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +180,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7B29CAD2288654E0088F9A2 /* Currency.swift in Sources */,
 				E7159DD8227EB7120013E89A /* ViewController.swift in Sources */,
+				E7F1937122854A5A00A22353 /* CurrencyCardCollectionViewController.swift in Sources */,
+				E7F1937322882D6C00A22353 /* Transaction.swift in Sources */,
+				E7B29CAB228845D80088F9A2 /* AccountsManager.swift in Sources */,
 				E7159DEC227ECD7D0013E89A /* UPCarouselFlowLayout.swift in Sources */,
 				E7159DEE227F36730013E89A /* CurrencyCollectionViewCell.swift in Sources */,
 				E7159DD6227EB7120013E89A /* AppDelegate.swift in Sources */,
+				E7F1937522882F6200A22353 /* Account.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

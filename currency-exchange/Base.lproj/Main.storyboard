@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ozx-G6-TGs">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Currency-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="currency_exchange" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7G4-tC-vjr">
-                                <rect key="frame" x="0.0" y="40" width="375" height="152"/>
+                                <rect key="frame" x="0.0" y="84" width="375" height="133"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CIf-o3-kyA">
                                     <size key="itemSize" width="316" height="149"/>
@@ -29,7 +29,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CurrencyIdentifier" id="M7T-IY-jTz" customClass="CurrencyCollectionViewCell" customModule="currency_exchange" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="1.5" width="316" height="149"/>
+                                        <rect key="frame" x="0.0" y="-8" width="316" height="149"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="316" height="149"/>
@@ -47,11 +47,14 @@
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" text="-1" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L9I-tk-b1R">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1.00" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L9I-tk-b1R">
                                                     <rect key="frame" x="188" y="38" width="108" height="46"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <connections>
+                                                        <action selector="sourceTransactionValueChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="Vjc-3h-T1j"/>
+                                                    </connections>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€1 = £0.86" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chh-HU-WlA">
                                                     <rect key="frame" x="203" y="110" width="93" height="18"/>
@@ -87,7 +90,7 @@
                                 </cells>
                             </collectionView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0h6-oJ-E75">
-                                <rect key="frame" x="0.0" y="208" width="375" height="152"/>
+                                <rect key="frame" x="0.0" y="233" width="375" height="134"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="nCw-Pi-BUX">
                                     <size key="itemSize" width="316" height="145"/>
@@ -97,7 +100,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CurrencyIdentifier" id="HCx-gR-QYL" customClass="CurrencyCollectionViewCell" customModule="currency_exchange" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="3.5" width="316" height="145"/>
+                                        <rect key="frame" x="0.0" y="-5.5" width="316" height="145"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="316" height="145"/>
@@ -115,7 +118,7 @@
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" text="-1" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zdK-iG-uYN">
+                                                <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1.00" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zdK-iG-uYN">
                                                     <rect key="frame" x="188" y="38" width="108" height="46"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
@@ -144,6 +147,7 @@
                                             <constraint firstAttribute="trailingMargin" secondItem="uyt-Cm-PWU" secondAttribute="trailing" constant="210" id="uEG-Fv-FuW"/>
                                             <constraint firstItem="H1t-vy-3LQ" firstAttribute="top" secondItem="zdK-iG-uYN" secondAttribute="bottom" constant="26" id="wPT-dJ-ahb"/>
                                         </constraints>
+                                        <size key="customSize" width="316" height="145"/>
                                         <connections>
                                             <outlet property="currencyNameLabel" destination="uyt-Cm-PWU" id="pUd-ue-Ujg"/>
                                             <outlet property="currentBalanceOfThisCurrencyLabel" destination="UaG-hf-YDv" id="TEK-I4-c1G"/>
@@ -159,20 +163,46 @@
                             <constraint firstItem="7G4-tC-vjr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BHp-vX-2qx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7G4-tC-vjr" secondAttribute="trailing" id="KMw-dI-WuO"/>
                             <constraint firstItem="0h6-oJ-E75" firstAttribute="top" secondItem="7G4-tC-vjr" secondAttribute="bottom" constant="16" id="PRd-Mh-omb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7G4-tC-vjr" secondAttribute="bottom" constant="475" id="Qwo-3w-IKj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7G4-tC-vjr" secondAttribute="bottom" constant="450" id="Qwo-3w-IKj"/>
                             <constraint firstItem="0h6-oJ-E75" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RL6-XQ-dWB"/>
                             <constraint firstItem="7G4-tC-vjr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="rUi-7U-QSh"/>
                             <constraint firstItem="0h6-oJ-E75" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="spN-qn-2zj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0h6-oJ-E75" secondAttribute="bottom" constant="307" id="vV4-qg-ZWk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0h6-oJ-E75" secondAttribute="bottom" constant="300" id="vV4-qg-ZWk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Currency" id="FAB-Se-9il">
+                        <barButtonItem key="rightBarButtonItem" title="Exchange" id="B4c-Y0-Z4d">
+                            <color key="tintColor" red="0.1176470588" green="0.30588235289999999" blue="0.47450980390000003" alpha="1" colorSpace="deviceRGB"/>
+                            <connections>
+                                <action selector="exchangeAction:" destination="BYZ-38-t0r" id="ReG-t9-lFs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="currencyCollectionView" destination="7G4-tC-vjr" id="khP-K8-TO8"/>
                         <outlet property="currencyCollectionView2" destination="0h6-oJ-E75" id="HpD-Bq-djY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1104.8" y="26.53673163418291"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Myh-vf-rDf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ozx-G6-TGs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LbK-Lk-KRm">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ynY-Wy-LmQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZxY-du-Uuv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="165.59999999999999" y="26.53673163418291"/>
         </scene>
