@@ -17,7 +17,6 @@ class CurrencyCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var currencyNameLabel: UILabel!
     @IBOutlet weak var exchangeValueTextField: UITextField!
     @IBOutlet weak var currentBalanceOfThisCurrencyLabel: UILabel!
-    @IBOutlet weak var rateLabel: UILabel!
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

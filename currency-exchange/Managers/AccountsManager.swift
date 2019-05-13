@@ -9,9 +9,9 @@
 import Foundation
 
 class AccountsManager {
-    let eurAccount = Account(name: "EUR", value: 80)
-    let usdAccount = Account(name: "USD", value: 33)
-    let gbpAccount = Account(name: "GBP", value: 170)
+    let eurAccount = Account(name: .eur, value: 100)
+    let usdAccount = Account(name: .usd, value: 100)
+    let gbpAccount = Account(name: .gbp, value: 100)
     
     lazy var accounts = [eurAccount, usdAccount, gbpAccount]
 }
