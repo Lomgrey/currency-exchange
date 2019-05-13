@@ -58,7 +58,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         do {
             try transactionManager.doTransaction(transaction)
             reloadCollectionData()
-            showAllert(amount: transaction.amount, destinationAccount: transaction.destinationAccount)
+            let transactionAmount = converter.rate(value: transaction.amount, from: transaction.sourceAccount.currencyName, to: transaction.destinationAccount.currencyName)
+            showAllert(amount: transactionAmount, destinationAccount: transaction.destinationAccount)
         } catch TransactionError.insufficientFunds {
             showErrorAlert(message: "Insufficient Funds")
         } catch {
