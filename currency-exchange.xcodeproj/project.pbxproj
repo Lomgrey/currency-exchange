@@ -12,7 +12,6 @@
 		E7159DDB227EB7120013E89A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7159DD9227EB7120013E89A /* Main.storyboard */; };
 		E7159DDD227EB7150013E89A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7159DDC227EB7150013E89A /* Assets.xcassets */; };
 		E7159DE0227EB7150013E89A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7159DDE227EB7150013E89A /* LaunchScreen.storyboard */; };
-		E7159DEC227ECD7D0013E89A /* UPCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7159DEB227ECD7D0013E89A /* UPCarouselFlowLayout.swift */; };
 		E7159DEE227F36730013E89A /* CurrencyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7159DED227F36730013E89A /* CurrencyCollectionViewCell.swift */; };
 		E7B29CAB228845D80088F9A2 /* AccountsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B29CAA228845D80088F9A2 /* AccountsManager.swift */; };
 		E7B29CAD2288654E0088F9A2 /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B29CAC2288654E0088F9A2 /* Converter.swift */; };
@@ -22,6 +21,7 @@
 		E7B946092288A05D007CA75E /* TransactionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B946082288A05D007CA75E /* TransactionManager.swift */; };
 		E7F1937322882D6C00A22353 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F1937222882D6C00A22353 /* Transaction.swift */; };
 		E7F1937522882F6200A22353 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F1937422882F6200A22353 /* Account.swift */; };
+		E7FFA75D2289E0F100E4291E /* UPCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FFA75C2289E0F100E4291E /* UPCarouselFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +32,6 @@
 		E7159DDC227EB7150013E89A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7159DDF227EB7150013E89A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7159DE1227EB7150013E89A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E7159DEB227ECD7D0013E89A /* UPCarouselFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UPCarouselFlowLayout.swift; path = "../../../../Downloads/UPCarouselFlowLayout-master/UPCarouselFlowLayout/UPCarouselFlowLayout.swift"; sourceTree = "<group>"; };
 		E7159DED227F36730013E89A /* CurrencyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCollectionViewCell.swift; sourceTree = "<group>"; };
 		E7B29CAA228845D80088F9A2 /* AccountsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsManager.swift; sourceTree = "<group>"; };
 		E7B29CAC2288654E0088F9A2 /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
@@ -42,6 +41,7 @@
 		E7B946082288A05D007CA75E /* TransactionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionManager.swift; sourceTree = "<group>"; };
 		E7F1937222882D6C00A22353 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		E7F1937422882F6200A22353 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		E7FFA75C2289E0F100E4291E /* UPCarouselFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UPCarouselFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,6 @@
 				E7B9460A22891BF2007CA75E /* Controllers */,
 				E7B29CAE22887A6F0088F9A2 /* Network */,
 				E7B29CA9228845B90088F9A2 /* Managers */,
-				E7159DEB227ECD7D0013E89A /* UPCarouselFlowLayout.swift */,
 				E7159DD9227EB7120013E89A /* Main.storyboard */,
 				E7B29CAC2288654E0088F9A2 /* Converter.swift */,
 				E7F1936C2285417D00A22353 /* model */,
@@ -127,6 +126,7 @@
 		E7F1936D2285419600A22353 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E7FFA75C2289E0F100E4291E /* UPCarouselFlowLayout.swift */,
 				E7159DD5227EB7120013E89A /* AppDelegate.swift */,
 				E7159DDE227EB7150013E89A /* LaunchScreen.storyboard */,
 				E7159DDC227EB7150013E89A /* Assets.xcassets */,
@@ -207,12 +207,12 @@
 			files = (
 				E7B29CAD2288654E0088F9A2 /* Converter.swift in Sources */,
 				E7159DD8227EB7120013E89A /* ViewController.swift in Sources */,
+				E7FFA75D2289E0F100E4291E /* UPCarouselFlowLayout.swift in Sources */,
 				E7B9460322887D87007CA75E /* Conn.swift in Sources */,
 				E7F1937322882D6C00A22353 /* Transaction.swift in Sources */,
 				E7B29CAB228845D80088F9A2 /* AccountsManager.swift in Sources */,
 				E7B9460722889256007CA75E /* CurrencyNetwork.swift in Sources */,
 				E7B9460522887F36007CA75E /* Currency.swift in Sources */,
-				E7159DEC227ECD7D0013E89A /* UPCarouselFlowLayout.swift in Sources */,
 				E7B946092288A05D007CA75E /* TransactionManager.swift in Sources */,
 				E7159DEE227F36730013E89A /* CurrencyCollectionViewCell.swift in Sources */,
 				E7159DD6227EB7120013E89A /* AppDelegate.swift in Sources */,
